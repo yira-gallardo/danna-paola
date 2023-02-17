@@ -1,8 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import GALLERY from "@/constants/gallery.json";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { useState } from "react";
 
 export default function Home() {
+  const [items, setItems] = useState(GALLERY);
+
+  const addItems = () => {
+    setItems(items.concat(GALLERY));
+  };
   return (
     <>
       <Head>
@@ -25,22 +32,19 @@ export default function Home() {
         <div className={styles.right}>lorem</div>
       </div>
       <main>
-        <section
-          className={styles.image}
-          style={{ backgroundImage: "url(/img/danna-01.jpeg)" }}
-        />
-        <section
-          className={styles.image}
-          style={{ backgroundImage: "url(/img/danna-02.jpeg)" }}
-        />
-        <section
-          className={styles.image}
-          style={{ backgroundImage: "url(/img/danna-03.jpeg)" }}
-        />
-        <section
-          className={styles.image}
-          style={{ backgroundImage: "url(/img/danna-04.jpeg)" }}
-        />
+        <InfiniteScroll
+          dataLength={items.length}
+          next={addItems}
+          hasMore={true}
+        >
+          {items.map((image) => (
+            <section
+              key={image.id}
+              className={styles.image}
+              style={{ backgroundImage: `url(/img/${image.url})` }}
+            />
+          ))}
+        </InfiniteScroll>
       </main>
       <footer className={styles.footer}>
         Danna Paola 2023® Todos los derechos reservados
