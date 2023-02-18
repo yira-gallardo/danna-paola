@@ -1,15 +1,26 @@
+import Link from "next/link";
 import styles from "@/styles/Nav.module.css";
 
-export const Nav = () => {
+export const Nav = ({ tipo }) => {
   return (
-    <nav className={styles.menu}>
-      <div className={styles.link}>TOUR</div>
-      <div className={styles.link}>MÚSICA</div>
-      <div className={styles.link}>
+    <nav
+      className={`${tipo === "claro" ? styles.menuClaro : styles.menuOscuro}`}
+    >
+      <Link href="/tour" className={styles.link}>
+        TOUR
+      </Link>
+      <Link href="/musica" className={styles.link}>
+        MÚSICA
+      </Link>
+      <Link href="/" className={styles.link}>
         <h1>DANNA PAOLA</h1>
-      </div>
-      <div className={styles.link}>TIENDA</div>
-      <div className={styles.link}>CONTACTO</div>
+      </Link>
+      <Link href="/tienda" className={styles.link}>
+        TIENDA
+      </Link>
+      <Link href="/contacto" className={styles.link}>
+        CONTACTO
+      </Link>
     </nav>
   );
 };
