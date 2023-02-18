@@ -1,0 +1,25 @@
+.tour {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tour > .left {
+  width: 50%;
+}
+.tour .image {
+  width: 100%;
+}
+.tour .image .imageImg {
+  width: 100%;
+  height: auto;
+  padding-left: 70px;
+}
+.tour > .right {
+  width: 50%;
+  color: black;
+  /* ESTILOS PARA CAJA SCROLEABLE */
+  height: 70vh;
+  overflow-y: auto; /* PARA SCROLEAR*/
+}
