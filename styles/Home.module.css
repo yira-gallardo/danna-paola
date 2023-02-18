@@ -7,28 +7,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-   min-height: 100vh; /* para ver pantalla completa */
+  min-height: 100vh; /* para ver pantalla completa */
 }
 
-.menu {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  transition-duration: 0.2s;
-  padding: 20px 0;
-  z-index: 999;
-}
-.menu .link {
-  background-color: transparent;
-  text-decoration: none;
-  padding: 8px 40px;
-  display: inline-block;
-  transition-duration: 0.2s;
-  font-size: 1.4em;
-}
 .flex {
   display: flex;
   position: fixed;
@@ -53,6 +34,7 @@
   font-size: 2em;
   margin-left: auto;
 }
+
 .footer {
   text-align: center;
   position: fixed;

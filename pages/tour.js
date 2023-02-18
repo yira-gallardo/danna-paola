@@ -14,7 +14,7 @@ export default function Tour() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
+      <Nav tipo="oscuro" />
       <main>
         <section className={styles.tour}>
           <div className={styles.left}>

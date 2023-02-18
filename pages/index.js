@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import GALLERY from "@/constants/gallery.json";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { useState } from "react";
+import { Nav } from "@/components/Nav/Nav";
 
 export default function Home() {
   const [items, setItems] = useState(GALLERY);
@@ -18,15 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.menu}>
-        <div className={styles.link}>TOUR</div>
-        <div className={styles.link}>MÚSICA</div>
-        <div className={styles.link}>
-          <h1>DANNA PAOLA</h1>
-        </div>
-        <div className={styles.link}>TIENDA</div>
-        <div className={styles.link}>CONTACTO</div>
-      </nav>
+      <Nav tipo="claro" />
       <div className={styles.flex}>
         <div className={styles.left}>ipsum</div>
         <div className={styles.right}>lorem</div>
