@@ -21,8 +21,17 @@ export default function Home() {
       </Head>
       <Nav tipo="claro" />
       <div className={styles.flex}>
-        <div className={styles.left}>ipsum</div>
-        <div className={styles.right}>lorem</div>
+        <div className={styles.left}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://open.spotify.com/artist/5xSx2FM8mQnrfgM1QsHniB?si=munR7UUSRLiSHjd3ZcVZ7Q"
+          >
+            XTAS1S
+          </a>
+        </div>
+        <div className={styles.right}>TOUR
+        </div>
       </div>
       <main>
         <InfiniteScroll

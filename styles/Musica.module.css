@@ -1,0 +1,22 @@
+.musica {
+  background-image: url(/img/danna-01.jpeg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover; /*esto es para que la imagen se adapte*/
+  background-position: 50% 30%;
+}
+.musica .spotify {
+  margin: 40px 0;
+}
+.musicaFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* para que mida toda la pantalla de alto */
+  flex-direction: column; /* para que se desplacen verticalmente los divs */
+  color: white;
+  font-size: 2em;
+}
+.musica .spotify {
+  width: 100%;
+}

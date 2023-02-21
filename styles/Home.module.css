@@ -23,18 +23,19 @@
 }
 .flex .left {
   text-align: left;
-  width: 40%;
+  width: 30%;
   font-size: 2em;
   margin-right: auto;
   text-align: right;
+  color: white;
 }
 .flex .right {
   text-align: left;
-  width: 40%;
+  width: 30%;
   font-size: 2em;
   margin-left: auto;
+  color: white;
 }
-
 .footer {
   text-align: center;
   position: fixed;
@@ -44,4 +45,8 @@
   z-index: 999;
   bottom: 0;
   padding-bottom: 20px;
+  color: white;
+}
+.flex .right a {
+  cursor: pointer;
 }

@@ -10,7 +10,7 @@
 .showItem .center {
   width: 50%;
   text-align: left;
-  font-size: 0.9em;
+  font-size: 0.7em;
   padding: 0 20px;
 }
 .showItem .right {
@@ -23,7 +23,8 @@
   background-color: transparent;
   border: 3px solid;
   text-decoration: none;
-  padding: 8px 40px;
+  padding: 8px 20px;
+  font-size: 0.8em;
   display: inline-block;
   transition-duration: 0.2s;
 }
