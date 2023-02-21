@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 import GALLERY from "@/constants/gallery.json";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -30,7 +31,10 @@ export default function Home() {
             XTAS1S
           </a>
         </div>
-        <div className={styles.right}>TOUR
+        <div className={styles.right}>
+          <Link href="/tour" className={styles.link}>
+            TOUR
+          </Link>
         </div>
       </div>
       <main>
