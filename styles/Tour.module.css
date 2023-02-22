@@ -27,3 +27,18 @@
 .tour .shows {
   padding: 20px 10px;
 }
+@media only screen and (max-width: 1000px) {
+  .tourFlex {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .tourFlex > .left {
+    width: 100%;
+  }
+  .tourFlex > .right {
+    width: 100%;
+    display: block;
+    overflow-y: initial;
+    height: auto;
+  }
+}

@@ -43,3 +43,9 @@
 .link:hover {
   color: #81ff8f;
 }
+@media only screen and (max-width: 1000px) {
+  .navDesktop {
+    display: none;
+  }
+  
+}

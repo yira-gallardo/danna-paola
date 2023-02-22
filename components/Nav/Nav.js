@@ -4,7 +4,9 @@ import styles from "@/styles/Nav.module.css";
 export const Nav = ({ tipo }) => {
   return (
     <nav
-      className={`${tipo === "claro" ? styles.menuClaro : styles.menuOscuro}`}
+      className={`${styles.navDesktop} ${
+        tipo === "claro" ? styles.menuClaro : styles.menuOscuro
+      }`}
     >
       <Link href="/tour" className={styles.link}>
         TOUR
