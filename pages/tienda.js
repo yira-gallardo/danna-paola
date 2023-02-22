@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Tienda.module.css";
 import { Nav } from "@/components/Nav/Nav";
 import { Footer } from "@/components/Footer/Footer";
+import { motion } from "framer-motion";
 
 export default function Tienda() {
   return (
@@ -16,9 +17,15 @@ export default function Tienda() {
       <Footer tipo="claro" />
       <main>
         <div className={styles.tienda}>
-          <div className={styles.text}>
-            <p>Coming soon</p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <div className={styles.text}>
+              <p>Coming soon</p>
+            </div>
+          </motion.div>
         </div>
       </main>
     </>

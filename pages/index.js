@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import GALLERY from "@/constants/gallery.json";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Nav } from "@/components/Nav/Nav";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [items, setItems] = useState(GALLERY);
@@ -23,18 +24,30 @@ export default function Home() {
       <Nav tipo="claro" />
       <div className={styles.flex}>
         <div className={styles.left}>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://open.spotify.com/artist/5xSx2FM8mQnrfgM1QsHniB?si=munR7UUSRLiSHjd3ZcVZ7Q"
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
           >
-            XTAS1S
-          </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://open.spotify.com/artist/5xSx2FM8mQnrfgM1QsHniB?si=munR7UUSRLiSHjd3ZcVZ7Q"
+            >
+              XTAS1S
+            </a>
+          </motion.div>
         </div>
         <div className={styles.right}>
-          <Link href="/tour" className={styles.link}>
-            TOUR
-          </Link>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            <Link href="/tour" className={styles.link}>
+              TOUR
+            </Link>
+          </motion.div>
         </div>
       </div>
       <main>
