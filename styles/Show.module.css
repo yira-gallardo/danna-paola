@@ -5,19 +5,21 @@
   margin-bottom: 20px;
 }
 .showItem .left {
-  width: 25%;
+  width: 20%;
 }
 .showItem .center {
-  width: 50%;
+  width: 40%;
   text-align: left;
   font-size: 0.7em;
   padding: 0 20px;
 }
 .showItem .right {
-  width: 25%;
+  width: 40%;
+  text-align: left;
 }
 .showItem .button {
   display: inline-block;
+  margin: 0 4px;
 }
 .showItem .button a {
   background-color: transparent;

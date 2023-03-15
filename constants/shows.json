@@ -4,69 +4,79 @@
     "date": "Feb 18, 2023",
     "venue": "Auditorio Citibanamex",
     "city": "Monterrey",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   },
   {
     "id": 2,
     "date": "Feb 25, 2023",
     "venue": "Auditorio Nacional",
     "city": "CDMX",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": false
   },
   {
     "id": 3,
     "date": "Feb 26, 2023",
     "venue": "Auditorio Nacional",
     "city": "CDMX",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   },
   {
     "id": 4,
     "date": "Mar 03, 2023",
     "venue": "Auditorio Josefa Ortiz de Domínguez",
     "city": "Queretaro",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   },
   {
     "id": 5,
     "date": "Mar 04, 2023",
     "venue": "Domo",
     "city": "Leon",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": false
   },
   {
     "id": 6,
     "date": "Mar 10, 2023",
     "venue": "Auditorio del Estado",
     "city": "Mexicali",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   },
   {
     "id": 7,
     "date": "Mar 11, 2023",
     "venue": "El tromo",
     "city": "Tijuana",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   },
   {
     "id": 8,
     "date": "Mar 18, 2023",
     "venue": "WTC",
     "city": "Veracruz",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": false
   },
   {
     "id": 9,
     "date": "Abr 28, 2023",
     "venue": "Auditorio Guelaguetza",
     "city": "Oaxaca",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": false
   },
   {
     "id": 10,
     "date": "Abr 30, 2023",
     "venue": "Coliseo de la concordia",
     "city": "Orizaba",
-    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx"
+    "tickets": "https://www.ticketmaster.com.mx/?language=en-mx",
+    "vip": true
   }
 ]
