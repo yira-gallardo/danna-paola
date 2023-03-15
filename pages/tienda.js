@@ -23,7 +23,7 @@ export default function Tienda() {
             transition={{ duration: 1 }}
           >
             <div className={styles.text}>
-              <p>Coming soon</p>
+              <p>Próximamente</p>
             </div>
           </motion.div>
         </div>

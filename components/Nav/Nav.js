@@ -15,9 +15,14 @@ export const Nav = ({ tipo }) => {
         <Link href="/tour" className={styles.link}>
           TOUR
         </Link>
-        <Link href="/musica" className={styles.link}>
+        <a
+          href="https://universalmusicmexico.lnk.to/DPXT4S1S"
+          className={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
           MÚSICA
-        </Link>
+        </a>
         <Link href="/" className={styles.link}>
           <h1>DANNA PAOLA</h1>
         </Link>
