@@ -1,6 +1,6 @@
 import styles from "@/styles/Show.module.css";
 
-export const Show = ({ date, venue, city, tickets }) => {
+export const Show = ({ date, venue, city, tickets, vip }) => {
   return (
     <div className={styles.showItem}>
       <div className={styles.left}>{date}</div>
@@ -16,6 +16,13 @@ export const Show = ({ date, venue, city, tickets }) => {
             Boletos
           </a>
         </div>
+        {vip && (
+          <div className={styles.button}>
+            <a href={tickets} target="_blank" rel="noreferrer">
+              VIP
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

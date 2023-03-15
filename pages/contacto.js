@@ -3,8 +3,34 @@ import styles from "@/styles/Contacto.module.css";
 import { Nav } from "@/components/Nav/Nav";
 import { Footer } from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 
 export default function Contacto() {
+  const form = useRef();
+  const [isMailSent, setIsMailSent] = useState(false);
+  const [sendingMail, setSendingMail] = useState(false);
+
+  const sendEmail = (e) => {
+    setSendingMail(true);
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "vannelo",
+        "template_0dh4pdw",
+        form.current,
+        "GWoEfazLvcexVN1vn"
+      )
+      .then(
+        (result) => {
+          alert("Te suscribiste con éxito");
+          setIsMailSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <Head>
@@ -24,8 +50,8 @@ export default function Contacto() {
           <div className={styles.contacto}>
             <div className={styles.title}>Contacto</div>
             <div className={styles.text}>
-              <a href="mailto:dannapaola@contacto.com">
-                dannapaola@contacto.com
+              <a href="mailto:dannapaola@themusicbusinesscompany.com">
+                dannapaola@themusicbusinesscompany.com
               </a>
             </div>
             <div className={styles.icons}>
@@ -96,6 +122,69 @@ export default function Contacto() {
                     <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
                   </svg>
                 </a>
+              </div>
+            </div>
+            {!isMailSent && (
+              <div className={styles.newsletter}>
+                <form ref={form}>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="tuemail@gmail.com"
+                    required
+                  />
+                </form>
+                <button onClick={sendEmail} disabled={sendingMail}>
+                  SUSCRIBIRSE A NEWSLETTER
+                </button>
+              </div>
+            )}
+            <div className={styles.foro}>
+              <div className="container">
+                <div className={styles.divider} />
+                <div className={styles.title}>
+                  <h2>Foro</h2>
+                  <h4>Dejame un mensaje:</h4>
+                </div>
+                <div className={styles.form}>
+                  <form>
+                    <input type="text" name="name" placeholder="Nombre" />
+                    <textarea name="message" placeholder="Mensaje"></textarea>
+                  </form>
+                  <button>ENVIAR</button>
+                </div>
+                <div className={styles.messages}>
+                  <article className={styles.message}>
+                    <div className={styles.name}>Juan</div>
+                    <div className={styles.message}>
+                      <p>
+                        Tempor ad sunt commodo ea nulla aliqua. Do sit non do
+                        eiusmod occaecat eu minim aliqua Lorem duis occaecat.
+                        Eiusmod nulla irure excepteur qui.
+                      </p>
+                    </div>
+                  </article>
+                  <article className={styles.message}>
+                    <div className={styles.name}>María</div>
+                    <div className={styles.message}>
+                      <p>
+                        Tempor ad sunt commodo ea nulla aliqua. Do sit non do
+                        eiusmod occaecat eu minim aliqua Lorem duis occaecat.
+                        Eiusmod nulla irure excepteur qui.
+                      </p>
+                    </div>
+                  </article>
+                  <article className={styles.message}>
+                    <div className={styles.name}>Jorge</div>
+                    <div className={styles.message}>
+                      <p>
+                        Tempor ad sunt commodo ea nulla aliqua. Do sit non do
+                        eiusmod occaecat eu minim aliqua Lorem duis occaecat.
+                        Eiusmod nulla irure excepteur qui.
+                      </p>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>

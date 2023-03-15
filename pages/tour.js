@@ -55,6 +55,7 @@ export default function Tour() {
                           venue={show.venue}
                           city={show.city}
                           tickets={show.tickets}
+                          vip={show.vip}
                         />
                       ))}
                     </motion.div>
