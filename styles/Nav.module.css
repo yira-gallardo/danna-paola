@@ -13,10 +13,10 @@
 .menuClaro .link {
   background-color: transparent;
   text-decoration: none;
-  padding: 8px 40px;
+  padding: 8px 20px;
   display: inline-block;
   transition-duration: 0.2s;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .menuOscuro {
@@ -34,10 +34,10 @@
 .menuOscuro .link {
   background-color: transparent;
   text-decoration: none;
-  padding: 8px 40px;
+  padding: 8px 20px;
   display: inline-block;
   transition-duration: 0.2s;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .link:hover {

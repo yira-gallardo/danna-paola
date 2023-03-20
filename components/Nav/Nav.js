@@ -22,7 +22,10 @@ export const Nav = ({ tipo }) => {
           rel="noreferrer"
         >
           MÚSICA
-        </a>
+        </a>{" "}
+        <Link href="/foro" className={styles.link}>
+          FORO
+        </Link>
         <Link href="/" className={styles.link}>
           <h1>DANNA PAOLA</h1>
         </Link>
@@ -31,6 +34,9 @@ export const Nav = ({ tipo }) => {
         </Link>
         <Link href="/contacto" className={styles.link}>
           CONTACTO
+        </Link>
+        <Link href="/contacto" className={styles.link}>
+          NEWSLETTER
         </Link>
       </nav>
       <nav
