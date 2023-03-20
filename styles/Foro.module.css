@@ -1,0 +1,71 @@
+.text:hover {
+  color: #81ff8f;
+}
+.divider {
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+.foro {
+  width: 100%;
+  padding-top: 100px;
+  background-color: white;
+}
+.foro h4 {
+  font-size: 0.5em;
+}
+.foro input {
+  width: 100%;
+  background-color: white;
+  border: none;
+  font-family: danna;
+  font-size: 1.2em;
+  color: black;
+}
+.foro textarea {
+  width: 100%;
+  min-height: 40px;
+  background-color: white;
+  border: none;
+  font-family: danna;
+  margin: 10px 0;
+  color: black;
+}
+.foro input:focus,
+.foro input:active,
+.foro input:active {
+  border: none;
+  outline: none;
+}
+.foro textarea:focus,
+.foro textarea:active,
+.foro textarea:active {
+  border: none;
+  outline: none;
+}
+.foro form {
+  margin: 20px 0;
+  color: black;
+}
+.foro button {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  font-family: danna;
+  border: none;
+  cursor: pointer;
+}
+.foro .messages {
+  margin: 40px 0;
+}
+.foro .message {
+  margin-bottom: 20px;
+}
+.foro .messages .name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.foro .messages .message {
+  font-size: 0.9em;
+}
