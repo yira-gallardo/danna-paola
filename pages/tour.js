@@ -6,8 +6,19 @@ import { Show } from "@/components/Show/Show";
 import { Nav } from "@/components/Nav/Nav";
 import { Footer } from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Tour() {
+  const [shows, setShows] = useState([]);
+
+  useEffect(() => {
+    fetch("https://tmbc-api.vercel.app/api/danna/tour")
+      .then((response) => response.json())
+      .then((data) => {
+        setShows(data);
+      });
+  }, []);
+
   return (
     <>
       <Head>
@@ -48,16 +59,17 @@ export default function Tour() {
                       transition={{ duration: 1, delay: 1 }}
                     >
                       {/* ALGORITMO DE SHOWS */}
-                      {LISTA_DE_SHOWS.map((show) => (
-                        <Show
-                          key={show.id}
-                          date={show.date}
-                          venue={show.venue}
-                          city={show.city}
-                          tickets={show.tickets}
-                          vip={show.vip}
-                        />
-                      ))}
+                      {shows.length &&
+                        shows.map((show, idx) => (
+                          <Show
+                            key={show.id}
+                            date={show.date}
+                            venue={show.venue}
+                            city={show.city}
+                            tickets={show.tickets}
+                            vip={show.tickets_vip}
+                          />
+                        ))}
                     </motion.div>
                   </div>
                 </div>
