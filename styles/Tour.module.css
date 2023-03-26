@@ -1,14 +1,14 @@
 .tour {
   background-color: white;
+  padding-top: 100px;
 }
 .tourFlex {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .tourFlex > .left {
-  width: 50%;
+  width: 40%;
 }
 .tour .image {
   width: 100%;
@@ -18,11 +18,10 @@
   height: auto;
 }
 .tourFlex > .right {
-  width: 50%;
+  width: 60%;
   color: black;
-  /* ESTILOS PARA CAJA SCROLEABLE */
   height: 70vh;
-  overflow-y: auto; /* PARA SCROLEAR*/
+  overflow-y: auto;
 }
 .tour .shows {
   padding: 20px 10px;

@@ -3,7 +3,7 @@ import styles from "@/styles/Show.module.css";
 export const Show = ({ date, venue, city, tickets, vip }) => {
   return (
     <div className={styles.showItem}>
-      <div className={styles.left}>{date}</div>
+      <div className={styles.left}>{date.substring(0, 10)}</div>
       <div className={styles.center}>
         <div className={styles.venue}>
           <div>{venue}</div>
