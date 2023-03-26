@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Tour.module.css";
-import LISTA_DE_SHOWS from "@/constants/shows.json";
 import { Show } from "@/components/Show/Show";
 import { Nav } from "@/components/Nav/Nav";
 import { Footer } from "@/components/Footer/Footer";
@@ -41,7 +40,7 @@ export default function Tour() {
                     transition={{ duration: 1 }}
                   >
                     <Image
-                      src="/img/logodanna.jpeg"
+                      src="/img/danna-paola-tour.png"
                       alt="Danna Paola"
                       className={styles.imageImg}
                       width={2000}
@@ -59,7 +58,7 @@ export default function Tour() {
                       transition={{ duration: 1, delay: 1 }}
                     >
                       {/* ALGORITMO DE SHOWS */}
-                      {shows.length &&
+                      {shows.length > 0 &&
                         shows.map((show, idx) => (
                           <Show
                             key={show.id}

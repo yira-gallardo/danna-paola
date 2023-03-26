@@ -9,6 +9,7 @@
 }
 .foro {
   width: 100%;
+  min-height: 100vh;
   padding-top: 100px;
   background-color: white;
 }
@@ -22,15 +23,19 @@
   font-family: danna;
   font-size: 1.2em;
   color: black;
+  border: 1px solid #aaa;
+  padding: 10px;
 }
 .foro textarea {
   width: 100%;
-  min-height: 40px;
+  min-height: 100px;
   background-color: white;
   border: none;
   font-family: danna;
   margin: 10px 0;
   color: black;
+  border: 1px solid #aaa;
+  padding: 10px;
 }
 .foro input:focus,
 .foro input:active,
@@ -68,4 +73,10 @@
 }
 .foro .messages .message {
   font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .foro {
+    padding: 100px 20px;
+  }
 }

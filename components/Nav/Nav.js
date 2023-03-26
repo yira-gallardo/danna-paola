@@ -96,6 +96,20 @@ export const Nav = ({ tipo }) => {
           >
             CONTACTO
           </Link>
+          <Link
+            href="/foro"
+            className={styles.link}
+            onClick={() => setIsMenuActive(false)}
+          >
+            FORO
+          </Link>
+          <Link
+            href="/newsletter"
+            className={styles.link}
+            onClick={() => setIsMenuActive(false)}
+          >
+            NEWSLETTER
+          </Link>
         </div>
       )}
     </div>
