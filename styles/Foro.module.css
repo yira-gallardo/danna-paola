@@ -12,6 +12,7 @@
   min-height: 100vh;
   padding-top: 100px;
   background-color: white;
+  color: black;
 }
 .foro h4 {
   font-size: 0.5em;
@@ -73,6 +74,11 @@
 }
 .foro .messages .message {
   font-size: 0.9em;
+}
+.foro .date {
+  color: gray;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

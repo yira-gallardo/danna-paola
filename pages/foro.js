@@ -93,11 +93,15 @@ export default function Foro() {
                 </form>
               </div>
               <div className={styles.messages}>
-                {/* ALGORITMO DE SHOWS */}
                 {comments.length > 0 &&
                   comments.map((comment) => (
                     <article className={styles.message} key={comment.id}>
-                      <div className={styles.name}>{comment.author}</div>
+                      <div className={styles.name}>
+                        {comment.author}
+                        <span className={styles.date}>
+                          {comment.date.substring(0, 10)}
+                        </span>
+                      </div>
                       <div className={styles.message}>
                         <p>{comment.comment}</p>
                       </div>

@@ -46,6 +46,13 @@ export default function Tour() {
                       width={2000}
                       height={1336}
                     />
+                    <Image
+                      src="/img/danna-paola-tour-2.jpg"
+                      alt="Danna Paola"
+                      className={styles.imageImg}
+                      width={2000}
+                      height={1336}
+                    />
                   </motion.div>
                 </div>
               </div>
