@@ -23,15 +23,16 @@ export const Nav = ({ tipo }) => {
         >
           MÚSICA
         </a>
-        <Link href="/foro" className={styles.link}>
+        {/* <Link href="/foro" className={styles.link}>
           FORO
+        </Link> */}
+        <Link href="/tienda" className={styles.link}>
+          TIENDA
         </Link>
         <Link href="/" className={styles.link}>
           <h1>DANNA PAOLA</h1>
         </Link>
-        <Link href="/tienda" className={styles.link}>
-          TIENDA
-        </Link>
+
         <Link href="/contacto" className={styles.link}>
           CONTACTO
         </Link>
@@ -99,13 +100,13 @@ export const Nav = ({ tipo }) => {
           >
             CONTACTO
           </Link>
-          <Link
+          {/* <Link
             href="/foro"
             className={styles.link}
             onClick={() => setIsMenuActive(false)}
           >
             FORO
-          </Link>
+          </Link> */}
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSdJWIw4fGMFcZIQTbDkFN_7LHlYlZ5NmXps6GJDXWyB3N0TRQ/viewform"
             className={styles.link}
