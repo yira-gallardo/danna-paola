@@ -3,6 +3,7 @@ import styles from "@/styles/Tienda.module.css";
 import { Nav } from "@/components/Nav/Nav";
 import { Footer } from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Tienda() {
   return (
@@ -22,9 +23,11 @@ export default function Tienda() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <div className={styles.text}>
-              <p>Próximamente</p>
-            </div>
+            <Link href="https://umusicstore.com.mx/collections/danna-paola">
+              <div className={styles.text}>
+                <p>Ir a tienda</p>
+              </div>
+            </Link>
           </motion.div>
         </div>
       </main>
