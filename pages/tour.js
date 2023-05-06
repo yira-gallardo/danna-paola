@@ -26,8 +26,8 @@ export default function Tour() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav tipo="oscuro" />
-      <Footer />
+      <Nav tipo="claro" />
+      <Footer tipo="claro" />
       <main>
         <section className={styles.tour}>
           <div className="container">
@@ -40,18 +40,11 @@ export default function Tour() {
                     transition={{ duration: 1 }}
                   >
                     <Image
-                      src="/img/danna-paola-tour.png"
+                      src="/img/danna-paola-tour-3.png"
                       alt="Danna Paola"
                       className={styles.imageImg}
-                      width={2000}
-                      height={1336}
-                    />
-                    <Image
-                      src="/img/danna-paola-tour-2.jpg"
-                      alt="Danna Paola"
-                      className={styles.imageImg}
-                      width={2000}
-                      height={1336}
+                      width={1920}
+                      height={1080}
                     />
                   </motion.div>
                 </div>

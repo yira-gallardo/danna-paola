@@ -7,7 +7,7 @@
   color: black;
   transition-duration: 0.2s;
   padding: 20px 0;
-  z-index: 999;
+  z-index: 998;
   color: white;
 }
 .menuClaro .link {
@@ -28,7 +28,7 @@
   color: black;
   transition-duration: 0.2s;
   padding: 20px 0;
-  z-index: 999;
+  z-index: 998;
   color: black;
 }
 .menuOscuro .link {
@@ -59,6 +59,23 @@
   align-items: center;
   flex-direction: column;
 }
+
+.socials {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  z-index: 999;
+}
+.socials a {
+  display: block;
+  padding: 6px;
+  cursor: pointer;
+}
+.socials a:hover {
+  color: #81ff8f;
+}
+
 @media only screen and (max-width: 1000px) {
   .navDesktop {
     display: none;

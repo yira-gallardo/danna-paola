@@ -1,11 +1,12 @@
 .tour {
-  background-color: white;
+  background-color: black;
+  color: white;
   padding-top: 100px;
 }
 .tourFlex {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .tourFlex > .left {
   width: 40%;
@@ -19,10 +20,11 @@
 }
 .tourFlex > .right {
   width: 60%;
-  color: black;
+  color: white;
   height: 70vh;
   overflow-y: auto;
 }
+
 .tour .shows {
   padding: 20px 10px;
 }
