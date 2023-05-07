@@ -18,7 +18,7 @@ export const Show = ({ date, venue, city, tickets, vip }) => {
         </div>
         {vip && (
           <div className={styles.button}>
-            <a href={tickets} target="_blank" rel="noreferrer">
+            <a href={vip} target="_blank" rel="noreferrer">
               VIP
             </a>
           </div>
