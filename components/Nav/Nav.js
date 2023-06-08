@@ -36,10 +36,7 @@ export const Nav = ({ tipo }) => {
         <Link href="/contacto" className={styles.link}>
           CONTACTO
         </Link>
-        <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdJWIw4fGMFcZIQTbDkFN_7LHlYlZ5NmXps6GJDXWyB3N0TRQ/viewform"
-          className={styles.link}
-        >
+        <Link href="https://keychain.club/dannap" className={styles.link}>
           NEWSLETTER
         </Link>
       </nav>
@@ -108,7 +105,7 @@ export const Nav = ({ tipo }) => {
             FORO
           </Link> */}
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdJWIw4fGMFcZIQTbDkFN_7LHlYlZ5NmXps6GJDXWyB3N0TRQ/viewform"
+            href="https://keychain.club/dannap"
             className={styles.link}
             onClick={() => setIsMenuActive(false)}
           >
