@@ -51,6 +51,13 @@ export default function Home() {
         </div>
       </div>
       <main>
+        <section className={styles.image}>
+          <div className={styles.video}>
+            <video width="400" autoPlay loop muted>
+              <source src="header.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
         <InfiniteScroll
           dataLength={items.length}
           next={addItems}

@@ -10,6 +10,18 @@
   min-height: 100vh; /* para ver pantalla completa */
 }
 
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+.video video {
+  width: 100%;
+}
+
 .flex {
   display: flex;
   position: fixed;
