@@ -71,6 +71,7 @@
   display: block;
   padding: 6px;
   cursor: pointer;
+  color: white;
 }
 .socials a:hover {
   color: #81ff8f;
