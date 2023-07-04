@@ -66,6 +66,9 @@
   .left {
     padding-left: 20px;
   }
+  .imageTop {
+    display: none;
+  }
   .video {
     display: none;
   }

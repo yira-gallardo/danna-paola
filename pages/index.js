@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <section className={styles.image}>
+        <section className={`${styles.image} ${styles.imageTop}`}>
           <div className={styles.video}>
             <video width="400" autoPlay loop muted>
               <source src="header.mp4" type="video/mp4" />
