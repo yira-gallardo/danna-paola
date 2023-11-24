@@ -34,7 +34,7 @@ export default function Home() {
               rel="noreferrer"
               href="https://open.spotify.com/artist/5xSx2FM8mQnrfgM1QsHniB?si=munR7UUSRLiSHjd3ZcVZ7Q"
             >
-              XTAS1S
+              XT4S1S
             </a>
           </motion.div>
         </div>
