@@ -133,7 +133,7 @@ export const Nav = ({ tipo }) => {
         </div>
         <div className={styles.social}>
           <a
-            href="https://www.instagram.com/dannapaola/"
+            href="https://www.instagram.com/danna/"
             target="_blank"
             rel="noreferrer"
           >
@@ -167,7 +167,7 @@ export const Nav = ({ tipo }) => {
         </div>
         <div className={styles.social}>
           <a
-            href="https://www.tiktok.com/@dannapaola?_t=8a35E6DHG58&_r=1"
+            href="https://www.tiktok.com/@danna?lang=es"
             target="_blank"
             rel="noreferrer"
           >

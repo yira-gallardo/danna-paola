@@ -74,7 +74,7 @@ export default function Contacto() {
               </div>
               <div className={styles.social}>
                 <a
-                  href="https://www.instagram.com/dannapaola/"
+                  href="https://www.instagram.com/danna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -108,7 +108,7 @@ export default function Contacto() {
               </div>
               <div className={styles.social}>
                 <a
-                  href="https://www.tiktok.com/@dannapaola?_t=8a35E6DHG58&_r=1"
+                  href="https://www.tiktok.com/@danna"
                   target="_blank"
                   rel="noreferrer"
                 >
